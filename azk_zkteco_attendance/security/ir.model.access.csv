@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_azk_machine,Access to Machine,model_azk_machine,base.group_user,1,1,1,1
+access_hr_azk_attendance,Access to Attendance,model_azk_machine_attendance,base.group_user,1,1,1,1
+access_hr_azk_attendance_report,Access to Attendance reports,model_azk_report_daily_attendance,base.group_user,1,1,1,1
+access_azk_machine_user_create,azk_machine_user_create,model_azk_machine_user_create,base.group_user,1,1,1,1
+access_azk_machine_user_delete,azk_machine_user_delete,model_azk_machine_user_delete,base.group_user,1,1,1,1
+
