@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access.mo.fraction,access_mo_infraction,model_mo_infraction,,1,1,1,1
+access.mo.tags,access_mo_tags,model_mo_tags,,1,1,1,1
+access.hr.infraction,access_hr_infraction,model_hr_infraction,,1,1,1,1
+access.hr.infraction.line,access_hr_infraction_line,model_hr_infraction_line,,1,1,1,1

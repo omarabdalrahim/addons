@@ -1,0 +1,21 @@
+<odoo>
+    <data>
+
+        <record id="infraction_1" model="mo.tags">
+            <field name="name">مخالفات تتعلق بمواعيد العمل</field>
+            <field name="color" eval="True"/>
+        </record>
+
+        <record id="infraction_2" model="mo.tags">
+            <field name="name">مخالفات تتعلق بنظام العمل او باداء اعمال الوظيفة</field>
+            <field name="color" eval="True"/>
+        </record>
+
+        <record id="infraction_3" model="mo.tags">
+            <field name="name">مخالفات تتعلق بالسلوك</field>
+            <field name="color" eval="True"/>
+        </record>
+
+
+    </data>
+</odoo>

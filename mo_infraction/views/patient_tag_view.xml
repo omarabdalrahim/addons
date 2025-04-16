@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_mo_tags_form" model="ir.ui.view">
+            <field name="name">Mo.tags.Form</field>
+            <field name="model">mo.tags</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                            </group>
+                            <group>
+                                <field name="color" widget="color_picker"/>
+                                <field name="color_2" widget="color" groups="base.group_no_one"/>
+                                <field name="active" widget="boolean_toggle"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_mo_tags_tree" model="ir.ui.view">
+            <field name="name">Mo.Tags.Tree</field>
+            <field name="model">mo.tags</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="name"/>
+                    <field name="color" widget="color_picker"/>
+                    <field name="active" widget="boolean_toggle"/>
+                </list>
+            </field>
+        </record>
+
+
+        <record id="action_mo_tags" model="ir.actions.act_window">
+            <field name="name">Mo Tags</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mo.tags</field>
+            <field name="view_mode">list,kanban,form</field>
+            <field name="context">{}</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create your first tag...!
+                </p>
+            </field>
+        </record>
+
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="tags_menu_item" name="Tags" parent="infraction_menu_root" action="action_mo_tags" sequence="30"/>
+
+    </data>
+</odoo>

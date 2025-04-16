@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_hr_contract_form_inherit" model="ir.ui.view">
+        <field name="name">hr.contract.form.inherit</field>
+        <field name="model">hr.contract</field>
+        <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page name="fixed_bonus" string="Fixed Bonuses">
+                    <field name="fixed_bonus_ids">
+                        <list editable="bottom">
+                            <field name="bonus_type"/>
+                            <field name="bonus_code"/>
+                            <field name="amount"/>
+                            <field name="note"/>
+                        </list>
+                    </field>
+
+                </page>
+
+            </xpath>
+
+        </field>
+    </record>
+</odoo>

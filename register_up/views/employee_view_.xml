@@ -1,0 +1,12 @@
+<odoo>
+ <record id="view_hr_employee_form_register_inherit" model="ir.ui.view">
+        <field name="name">hr.employee.form.register.inherit</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form/sheet/group/group/field[@name='department_id']" position="before">
+                        <field name="registration_number" />
+            </xpath>
+        </field>
+    </record>
+</odoo>

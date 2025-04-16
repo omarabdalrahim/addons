@@ -1,0 +1,33 @@
+<odoo>
+    <data>
+        <!-- Inherit Form View to Modify it -->
+        <record id="insurance_tab_inherit" model="ir.ui.view">
+            <field name="name">insurance.tab.inherit</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//page[@name='hr_settings']" position="after">
+                    <!-- Add your fields or attributes here -->
+                    <page name="insurance_info" string="Insurance Information">
+                        <group>
+                            <group>
+                                <field name="social_insurance_no"/>
+                                <field name="social_insurance_date"/>
+                                <field name="insurance_start_date"/>
+                                <field name="insurance_end_date"/>
+                            </group>
+                            <group>
+                                <field name="insurance_amount"/>
+                                <field name="employee_percentage"/>
+                                <field name="employee_share"/>
+                                <field name="company_percentage"/>
+                                <field name="company_share"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
