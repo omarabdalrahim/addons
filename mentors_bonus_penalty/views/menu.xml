@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="payroll_bonus_penalty"
+              name="Bonus/Penalty"
+              parent="hr_work_entry_contract_enterprise.menu_hr_payroll_root"
+              sequence="60"
+    />
+    <menuitem id="menu_hr_bonus_type"
+              parent="payroll_bonus_penalty"
+              action="act_hr_bonus_penalty_type"
+              sequence="12"/>
+    <menuitem id="menu_hr_bonus"
+              name="Bonus/Penalty"
+              parent="payroll_bonus_penalty"
+              action="act_hr_bonus"
+              sequence="2"/>
+
+</odoo>

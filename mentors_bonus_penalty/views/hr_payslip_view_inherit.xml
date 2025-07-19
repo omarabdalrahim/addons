@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_hr_payslip_form_inherit" model="ir.ui.view">
+        <field name="name">hr.payslip.form.inherit</field>
+        <field name="model">hr.payslip</field>
+        <field name="inherit_id" ref="hr_payroll.view_hr_payslip_form"/>
+        <field name="arch" type="xml">
+<!--            # adding button for report print-->
+<!--            <xpath expr="//button[@name='action_print_payslip']" position="after">-->
+<!--                <button name="action_print_arabic_pdf" string="عناصر أجر الموظفين(PDF)" type="object" class="oe_highlight"/>-->
+<!--                <button name="action_print_arabic_excel" string="عناصر أجر الموظفين(Excel)" type="object" class="oe_highlight"/>-->
+<!--            </xpath>-->
+            <xpath expr="//notebook" position="inside">
+                <page name="bonuses" string="Bonuses">
+                    <field name="hr_bonus_ids"
+                           context="{'employee_id':employee_id, 'type':'bonus'}">
+                        <list create="0">
+                            <field name="bonus_penalty_id" string="Bonus"/>
+                            <field name="date"/>
+                            <field name="type_id" domain="[('type','=','bonus')]"/>
+                            <field name="amount" sum="total"/>
+                            <field name="amount_type"/>
+                            <field name="notes"/>
+                        </list>
+                    </field>
+
+                </page>
+                <page name="penalties" string="Penalties">
+                    <field name="hr_penalty_ids"
+                           context="{'employee_id':employee_id, 'type':'penalty'}">
+                        <list create="0">
+                            <field name="bonus_penalty_id" string="Penalty"/>
+                            <field name="date"/>
+                            <field name="type_id" domain="[('type','=','penalty')]"/>
+                            <field name="amount" sum="total"/>
+                            <field name="amount_type"/>
+                            <field name="notes"/>
+                        </list>
+                    </field>
+
+                </page>
+
+            </xpath>
+            <xpath expr="/form/sheet/div/div[hasclass('oe_title')]" position="after">
+                 <div class="oe_title mw-75 ps-0 pe-2">
+                    <label for="registration_number"/>
+                    <h1><field name="registration_number" placeholder="Employee Number"/></h1>
+                </div>
+            </xpath>
+
+        </field>
+    </record>
+</odoo>

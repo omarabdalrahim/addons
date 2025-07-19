@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+account_hr_bonus_penalty_manager,hr_bonus_penalty_access_full,model_hr_bonus_penalty,hr.group_hr_manager,1,1,1,1
+account_hr_bonus_penalty_line_manager,hr_bonus_penalty_line_access_full,model_hr_bonus_penalty_line,hr.group_hr_manager,1,1,1,1
+account_hr_bonus_penalty_type_manager,hr_bonus_penalty_type_access_full,model_hr_bonus_penalty_type,hr.group_hr_manager,1,1,1,1
+account_total_amount_line_manager,total_amount_line_access_full,model_total_amount_line,hr.group_hr_manager,1,1,1,1
+account_fixed_bonus_manager,fixed_bonus_access_full,model_fixed_bonus,hr.group_hr_manager,1,1,1,1

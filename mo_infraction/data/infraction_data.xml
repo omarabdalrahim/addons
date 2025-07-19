@@ -1,0 +1,401 @@
+<odoo>
+    <data>
+
+        <record id="work_1" model="mo.infraction">
+            <field name="name">التأخير عن مواعيد الحضور حتى 15 دقيقة بدون إذن أو عذر مقبول ولم يترتب على التأخير تعطيل الآخرين</field>
+            <field name="code">1A</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_1')])]"/>
+        </record>
+
+        <record id="work_2" model="mo.infraction">
+            <field name="name">التأخير عن مواعيد الحضور حتى 15 دقيقة بدون إذن أو عذر مقبول وترتب على التأخير تعطيل الآخرين</field>
+            <field name="code">1B</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_1')])]"/>
+
+        </record>
+        <record id="work_3" model="mo.infraction">
+            <field name="name">التأخير عن مواعيد الحضور اكثر من 15 دقيقة حتى 60 دقيقة بدون إذن أو عذر مقبول و لم يترتب على التأخير تعطيل الآخرين</field>
+            <field name="code">2ِA</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_1')])]"/>
+        </record>
+
+        <record id="work_4" model="mo.infraction">
+            <field name="name">التأخير عن مواعيد الحضور اكثر من 15 دقيقة حتى 60 دقيقة بدون إذن أو عذر مقبول و ترتب على التأخير تعطيل الآخرين</field>
+            <field name="code">2B</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_1')])]"/>
+        </record>
+
+        <record id="work_5" model="mo.infraction">
+            <field name="name">التأخير عن مواعيد العمل أكثر من 60 دقيقة دون إذن أو عذر مقبول سواء ترتب أو لم يترتب علي التأخير تعطيل عمال آخرين</field>
+            <field name="code">3</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_1')])]"/>
+        </record>
+
+        <record id="work_6" model="mo.infraction">
+            <field name="name">الانقطاع عن العمل بدون إذن أو عذر مقبول</field>
+            <field name="code">4</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_1')])]"/>
+        </record>
+
+        <record id="work_7" model="mo.infraction">
+            <field name="name">عدم التوقيع في سجلات الحضور أو الانصراف أو ما يقوم مقامها بما يفيد الوقت الفعلي للحضور أو الانصراف بدون إذن أو عذر مقبول</field>
+            <field name="code">5</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_1')])]"/>
+        </record>
+
+        <record id="work_8" model="mo.infraction">
+            <field name="name">البقاء في مكان العمل بعد انتهائه أو العودة إليه بعد انتهاء مواعيد العمل دون إذن أو عذر مقبول</field>
+            <field name="code">6</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_1')])]"/>
+        </record>
+
+        <record id="work_9" model="mo.infraction">
+            <field name="name">التلاعب في طريقة إثبات الحضور أو الانصراف أو كلاهما .</field>
+            <field name="code">7</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_1')])]"/>
+        </record>
+
+        <record id="work_10" model="mo.infraction">
+            <field name="name">ترك مكان العمل أو الانصراف قبل المواعيد المحددة دون إذن أو عذر مقبول (عاملين لا يتصل عملهم بالإنتاج أو الصيانة أو الحراسة أو الإسعاف أو الحريق)</field>
+            <field name="code">8A</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_1')])]"/>
+        </record>
+
+        <record id="work_11" model="mo.infraction">
+            <field name="name">ترك مكان العمل أو الانصراف قبل المواعيد المحددة دون إذن أو عذر مقبول (عاملين يتصل عملهم بالإنتاج أو الصيانة أو الحراسة أو الإسعاف أو الحريق)</field>
+            <field name="code">8B</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_1')])]"/>
+        </record>
+        <!--        level 2-->
+        <record id="function_1" model="mo.infraction">
+            <field name="name">عدم حمل أو إبراز الشارة الخاصة بالدخول إلي أمكنة العمل أوعدم تعليقها بشكل بارز.</field>
+            <field name="code">9</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_2" model="mo.infraction">
+            <field name="name">عدم ارتداء الزي  الخاص بالعمل أثناء ساعات العمل.</field>
+            <field name="code">10</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_3" model="mo.infraction">
+            <field name="name">رفض التفتيش عند الدخول إلي منشأة أو عند الخروج منها.</field>
+            <field name="code">11</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_4" model="mo.infraction">
+            <field name="name">مخالفة القواعد والتعليمات الصحية المعلقة في أماكن العمل.</field>
+            <field name="code">12</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_5" model="mo.infraction">
+            <field name="name">الامتناع عن توقيع الكشف الطبي عند طلب طبيب المنشأة.</field>
+            <field name="code">13</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_6" model="mo.infraction">
+            <field name="name">عدم الأخطارعن تغيير الحالة الإجتماعية ومحل الإقامة خلال أسبوع علي الأكثر من تاريخ التغيير.</field>
+            <field name="code">14</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_7" model="mo.infraction">
+            <field name="name">عدم تخصيص وقت العمل لأداء واجبات الوظيفة بدون أذن.</field>
+            <field name="code">15</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_8" model="mo.infraction">
+            <field name="name">أستقبال الزائرين من غير العاملين بالمنشأة في أماكن العمل بدون إذن.</field>
+            <field name="code">16</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_9" model="mo.infraction">
+            <field name="name">استعمال التليفونات المنشأة لأغراض شخصية بدون إذن.</field>
+            <field name="code">17</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_10" model="mo.infraction">
+            <field name="name">كتابة بيانات أو لصق إعلانات علي الجدران أو غيرها بدون إذن من الإدارة جهة الأختصاص ولم يتسبب بضرر للمنشأة أو الصالح العام.</field>
+            <field name="code">18A</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_11" model="mo.infraction">
+            <field name="name">كتابة بيانات أو لصق إعلانات علي الجدران أو غيرها بدون إذن من الإدارة جهة الأختصاص وتسبب بضرر للمنشأة أو الصالح العام.</field>
+            <field name="code">18B</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_12" model="mo.infraction">
+            <field name="name">نزع أو تمزيق المنشورات أو المطبوعات المتعلقة بدواعي العمل.</field>
+            <field name="code">19</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_13" model="mo.infraction">
+            <field name="name">إدخال منشورات أو مطبوعات وتوزيعها بدون إذن من الإدارة أيا كان نوعها ولم يكن في هذه البيانات ضرر علي المنشأة أو الصالح العام .</field>
+            <field name="code">20A</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_14" model="mo.infraction">
+            <field name="name">إدخال منشورات أو مطبوعات وتوزيعها بدون إذن من الإدارة أيا كان نوعها وكان في هذه البيانات ضرر علي المنشأة أو الصالح العام .</field>
+            <field name="code">20B</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_15" model="mo.infraction">
+            <field name="name">إجراء أية معاملات تجارية أو جمع نقود أو إعلانات لأي فرد أو هيئة أو جمع توقيعات بدون إذن من الإدارة.</field>
+            <field name="code">21</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_16" model="mo.infraction">
+            <field name="name">تنظيم الإجتماعات أو المشاركة فيها داخل أماكن العمل دون إذن من الإدارة.</field>
+            <field name="code">22</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_17" model="mo.infraction">
+            <field name="name">إدخال مشروبات روحية أو أية أشياء غير مصرح بها.</field>
+            <field name="code">23</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_18" model="mo.infraction">
+            <field name="name">النوم أثناء العمل في الأحوال العادية.</field>
+            <field name="code">24A</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_19" model="mo.infraction">
+            <field name="name">النوم أثناء العمل في الأحوال التي تستدعي اليقظة التامة.</field>
+            <field name="code">24B</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_20" model="mo.infraction">
+            <field name="name">التدخين أو إشعال النار في أماكن العمل أو التدخين في غير الأماكن المخصصة أو في وسائل إنتقال العاملين .</field>
+            <field name="code">25</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_21" model="mo.infraction">
+            <field name="name">عدم الحرص في أستعمال الخامات أو أدوات العمل أو الإسراف في استهلاكها.</field>
+            <field name="code">26</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_22" model="mo.infraction">
+            <field name="name">الإهمال في مسك الدفاتر أو الملفات أو السجلات أو المستندات المستخدمة في العمل أو عدم حفظها في الأماكن المخصصة لها بعد إنتهاء العمل.</field>
+            <field name="code">27</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_23" model="mo.infraction">
+            <field name="name">استعمال الخامات أو المواد أو المهمات أو الأدوات أو غيرها في الأجهزة المملوكة للمنشأة في أغراض خاصة وشخصية.</field>
+            <field name="code">28</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_24" model="mo.infraction">
+            <field name="name">الإهمال في المحافظة علي أموال أو ممتلكات المنشأة أو ما يكو ن مودعا لديها لحساب عملائها بما قد يعرضها للتلف أو الفقد مما يترتب عليه ضرر للمنشأة.</field>
+            <field name="code">29</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_25" model="mo.infraction">
+            <field name="name">مخالفة أو عدم تنفيذ الأوامر أو التعليمات الصادرة من الإدارة أو الرؤساء والمتعلقة بالعمل وتنظيمه.</field>
+            <field name="code">30</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_26" model="mo.infraction">
+            <field name="name">التحريض علي مخالفة الأوامر والتعليمات الخاصة بالعمل أو عدم تنفيذها.</field>
+            <field name="code">31</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_27" model="mo.infraction">
+            <field name="name">مخالفة أو عدم تنفيذ التعليمات أو الأوامر المتعلقة بالأمن أو العمل علي تعطيل تنفيذها إذا لم يترتب علي المخالفة أي ضرر يمس الأرواح والأموال.</field>
+            <field name="code">32</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_28" model="mo.infraction">
+            <field name="name">العبث بالماكينات أو الألأت أو المهمات بحسن نيه.</field>
+            <field name="code">33</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_29" model="mo.infraction">
+            <field name="name">الأهمال في صيانة الألأت والماكينات أو الأدوات أو المعدات أو استخدامها سيئاً أو الاستمرار في تشغيلها رغم وجود خلل بها و عدم التبليغ عن هذا الخلل.</field>
+            <field name="code">34</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_30" model="mo.infraction">
+            <field name="name">العبث أو إرتكاب أي فعل عن طريق العمد يترتب عليه إتلاف منشأت أو ماكينات أو الألأت أو غير ذلك من الأموال أو التحريض علي ذلك.</field>
+            <field name="code">35</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_31" model="mo.infraction">
+            <field name="name">الأهمال الجسيم في أداء واجبات الوظيفة مما قد ينشأ عنه ضرر بالغ للأرواح وممتلكات المنشأة أو ما يكون مودعا لديها لحساب عملائها أو الإضرار بالإنتاج.</field>
+            <field name="code">36</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_32" model="mo.infraction">
+            <field name="name">أداء أعمال للغير بأجر أو بغير أجر في أوقات العمل بدون إذن.</field>
+            <field name="code">37</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_33" model="mo.infraction">
+            <field name="name">أفشاء العامل للأمور التي يطلع عليها بحكم وظيفته إذا كانت سرية بطبيعتها  بموجب تعليمات تقضي بذلك.</field>
+            <field name="code">38</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_34" model="mo.infraction">
+            <field name="name">مزاولة الأعمال التجارية أو أن يكون للعامل أية مصلحة في أعمال مقاولات أو مناقصات تتعلق بأعمال وظيفته .</field>
+            <field name="code">39</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_35" model="mo.infraction">
+            <field name="name">أحتفاظ العامل لنفسه بأصل أو مستند من مستندات العمل أو قيامه بنزع هذا  لأصل من الملفات المخصصة ولو كان ذلك بعمل كلفه به شخصياً هذا إذا لم يكن القصد من وراء ذلك التستر علي مخالفة أو جريمة.</field>
+            <field name="code">40</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_36" model="mo.infraction">
+            <field name="name">أحتفاظ العامل لنفسه بأصل أي مستند من مستندات العمل أو قيامه بنزع هذا الأصل من الملفات المخصصة ولو كان ذلك بعمل كلف به شخصياً اذا قصد من وراء ذلك التستر على مخالفة.</field>
+            <field name="code">41A</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_37" model="mo.infraction">
+            <field name="name">أحتفاظ العامل لنفسه بأصل أي مستند من مستندات العمل أو قيامه بنزع هذا الأصل من الملفات المخصصة ولو كان ذلك بعمل كلف به شخصياً اذا كان القصد من وراء ذلك التستر على جريمة جنائية.</field>
+            <field name="code">41B</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_38" model="mo.infraction">
+            <field name="name">نقل العامل مستندات تتعلق بالعمل خارج مقر العمل بدون إذن.</field>
+            <field name="code">42</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_39" model="mo.infraction">
+            <field name="name">مخالفة قواعد استخدام وحدات النقل التابعة للمنشأة.</field>
+            <field name="code">43</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_40" model="mo.infraction">
+            <field name="name">سوء استعمال الرؤساء للسلطات المخولة لهم.</field>
+            <field name="code">44</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_41" model="mo.infraction">
+            <field name="name">عدم قيام الرؤساء المباشرين بالإبلاغ عن المخالفات التي تقع في أماكن العمل والتي تصل إلي علمهم.</field>
+            <field name="code">45</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_42" model="mo.infraction">
+            <field name="name">مخالفة العامل لأحكام وتعليمات السلامة والصحة المهنية وكافة القرارات والتعليمات التي تصدرها المنشأة في هذا الشأن.</field>
+            <field name="code">46</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_43" model="mo.infraction">
+            <field name="name">عدم توريد النقود المحصلة لحساب المنشأة في المواعيد المقررة بدون مبرر.</field>
+            <field name="code">47</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_44" model="mo.infraction">
+            <field name="name">إثبات العامل وقائع غير صحيحة أو مخالفة للحقيقة بدفاتر المنشأة وأوراقها أو استبعاد أو حذف بيانات بقصد الحصول علي فائدة لنفسه أو للغير.</field>
+            <field name="code">48</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+
+        <record id="function_45" model="mo.infraction">
+            <field name="name">قيام العامل بعمل ليس من اختصاصه بدون تكليف.</field>
+            <field name="code">49</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_2')])]"/>
+        </record>
+<!--        behavior-->
+        <record id="behavior_1" model="mo.infraction">
+            <field name="name">تفوه العامل بما لا يتفق والإحترام الواجب لدين أو عقيدة الأخرين أثناء العمل .</field>
+            <field name="code">50</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_3')])]"/>
+        </record>
+
+        <record id="behavior_2" model="mo.infraction">
+            <field name="name">الإخلال بالنظام أو الأداب أثناء التواجد بالعيادة أو مستشفي لعلاج عمال المنشأة.</field>
+            <field name="code">51</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_3')])]"/>
+        </record>
+
+        <record id="behavior_3" model="mo.infraction">
+            <field name="name">قبول نقود أو هدايا بمناسبة قيامه بواجباته الوظيفية أو الامتناع عن القيام بها.</field>
+            <field name="code">52</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_3')])]"/>
+        </record>
+
+        <record id="behavior_4" model="mo.infraction">
+            <field name="name">الامتناع عن الحضور أو رفض الأداء بالأقوال في التحقيقات أو رفض التوقيع علي الأقوال أو الامتناع عن تقديم الأوراق والمستندات التي تكون في حوزة العامل</field>
+            <field name="code">53</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_3')])]"/>
+        </record>
+
+        <record id="behavior_5" model="mo.infraction">
+            <field name="name">الاعتداء بالقول أو الإشارة علي الزملاء أو المرؤسين أو أحداث شغب بدائرة العمل.</field>
+            <field name="code">54</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_3')])]"/>
+        </record>
+
+        <record id="behavior_6" model="mo.infraction">
+            <field name="name">الاعتداء علي الرؤساء.</field>
+            <field name="code">55</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_3')])]"/>
+        </record>
+
+        <record id="behavior_7" model="mo.infraction">
+            <field name="name">خروج العامل علي مقتضى اللياقة أو كرامة الوظيفة في مكان العمل.</field>
+            <field name="code">56</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_3')])]"/>
+        </record>
+
+        <record id="behavior_8" model="mo.infraction">
+            <field name="name">وجود العامل أثناء العمل في حالة سكر أو تحت تأثير مخدر أو ارتكابه أفعال مخلة بالآداب.</field>
+            <field name="code">57</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_3')])]"/>
+        </record>
+
+        <record id="behavior_9" model="mo.infraction">
+            <field name="name">التمارض أو افتعال إصابة أو جرح بقصد الحصول علي أجازة.</field>
+            <field name="code">58</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_3')])]"/>
+        </record>
+
+        <record id="behavior_10" model="mo.infraction">
+            <field name="name">التحريض علي الإضراب غير المشروع عن العمل أو الاعتصام داخل مقر العمل.</field>
+            <field name="code">59</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('infraction_3')])]"/>
+        </record>
+
+    </data>
+</odoo>
